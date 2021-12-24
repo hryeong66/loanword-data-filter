@@ -38,7 +38,7 @@ while(fileName != 'q'):
         print(f"{containWordList}")
 
     print(f"총 걸린 시간 : {datetime.datetime.now() - startTime}")
-    wb.save(f"1220/result/{fileName}.xlsx")
+    wb.save(f"data/result/{fileName}.xlsx")
     wb.close()
     print("다른 파일 이름을 적어주세요, 끝내려면 q를 입력해주세요")
     fileName = input()
