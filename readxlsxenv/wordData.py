@@ -8,7 +8,7 @@ def getWordList():
     wordList = []
     startTime = datetime.datetime.now()
     print(f"startTime {startTime}")
-    for word in df["외래어발음"]:
+    for word in df["발음"]:
         wordList.append(word)
     wordList.sort()
     print(f"endTime {datetime.datetime.now()}")
