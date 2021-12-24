@@ -8,7 +8,7 @@ wordList = wordData.getWordList()
 print("다른 파일 이름을 입력한 후 엔터를 눌러주세요! 끝내려면 q를 입력해주세요")
 fileName = input()
 while(fileName != 'q'):
-    df = pd.read_excel(f"1220/{fileName}.xlsx")
+    df = pd.read_excel(f"data/{fileName}.xlsx")
     wb = xl.Workbook()
     sheet = wb.active
     sheet.title = "sheet"
