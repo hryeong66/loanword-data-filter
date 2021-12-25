@@ -32,11 +32,13 @@
 
 이제 파일명을 입력해주시며 됩니다!
 
+
 <img width="649" alt="image" src="https://user-images.githubusercontent.com/59547116/147374556-08f82254-6660-4cd4-9bec-31e584abd4da.png">
 
 사진처럼 뒤에 .xlsx 확장하는 제외하고 파일명만 입력해주시면 됩니다!
 
-<img width="443" alt="image" src="https://user-images.githubusercontent.com/59547116/147374572-7fd93ddc-67ee-4648-aa25-9163967552d3.png">
+<img width="535" alt="image" src="https://user-images.githubusercontent.com/59547116/147374725-49114480-afcd-4417-9afa-5da71aadd4d2.png">
+
 
 해당 파일의 작업이 끝나면 다음 파일명을 입력하라는 문구가 뜨는데요, 다음 작업할 파일명을 입력해주시면 됩니다!
 
