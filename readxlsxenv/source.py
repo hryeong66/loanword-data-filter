@@ -5,7 +5,7 @@ import datetime
 
 
 wordList = wordData.getWordList()
-print("다른 파일 이름을 입력한 후 엔터를 눌러주세요! 끝내려면 q를 입력해주세요")
+print("파일 이름을 입력한 후 엔터를 눌러주세요! 끝내려면 q를 입력해주세요")
 fileName = input()
 while(fileName != 'q'):
     df = pd.read_excel(f"data/{fileName}.xlsx")
@@ -35,7 +35,6 @@ while(fileName != 'q'):
         containWordList = refineList(containWordList)
         containWordList.insert(0, statement)
         sheet.append(containWordList)
-        print(f"{containWordList}")
 
     print(f"총 걸린 시간 : {datetime.datetime.now() - startTime}")
     wb.save(f"data/result/{fileName}.xlsx")
