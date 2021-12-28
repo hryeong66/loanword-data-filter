@@ -3,7 +3,15 @@ import pandas as pd
 import openpyxl as xl
 import datetime
 
-
+def refineList(wordList):
+    deleteList = []
+    wordList.sort(key=len)
+    for i in range(len(wordList) - 1):
+        for j in range(i + 1, len(wordList)):
+            if wordList[i] in wordList[j]:
+                deleteList.append(wordList[i])
+    return list(set(wordList).difference(deleteList))
+        
 wordList = wordData.getWordList()
 print("파일 이름을 입력한 후 엔터를 눌러주세요! 끝내려면 q를 입력해주세요")
 fileName = input()
@@ -13,16 +21,6 @@ while(fileName != 'q'):
     sheet = wb.active
     sheet.title = "sheet"
     startTime = datetime.datetime.now()
-
-    def refineList(wordList):
-        deleteList = []
-        wordList.sort(key=len)
-        for i in range(len(wordList) - 1):
-            for j in range(i + 1, len(wordList)):
-                if wordList[i] in wordList[j]:
-                    deleteList.append(wordList[i])
-        return list(set(wordList).difference(deleteList))
-
 
     for statement in df["스크립트"]:
         if type(statement) != type(""):
